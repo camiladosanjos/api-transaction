@@ -20,7 +20,7 @@ func InsertAccount(account Account) int {
 
 	err := db.QueryRow(sqlStatement, account.Document).Scan(&accountId)
 	if err != nil {
-		log.Fatalf("Unable to execute the query. %v", err)
+		log.Fatalf("Unable to execute the query.", err)
 	}
 
 	defer db.Close()

@@ -27,7 +27,7 @@ func InsertTransaction(transaction Transaction) int {
 
 	err := db.QueryRow(sqlStatement, transaction.AccountId, transaction.OperationTypeId, absoluteAmount).Scan(&transactionId)
 	if err != nil {
-		log.Fatalf("Unable to execute the query. %v", err)
+		log.Fatalf("Unable to execute the query.", err)
 	}
 
 	defer db.Close()
@@ -50,7 +50,7 @@ func SelectTransaction(accountId int, initialDate time.Time, endDate string) []T
 
 	rows, err := db.Query(sqlStatement, accountId, initialDate, endDate)
 	if err != nil {
-		log.Fatalf("Unable to execute the query. %v", err)
+		log.Fatalf("Unable to execute the query.", err)
 	}
 
 	item := Transaction{}

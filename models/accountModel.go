@@ -24,7 +24,7 @@ func InsertAccount(account Account) int {
 	}
 
 	defer db.Close()
-	fmt.Println("Account inserted %v", accountId)
+	fmt.Println("Account inserted", accountId)
 
 	return accountId
 }

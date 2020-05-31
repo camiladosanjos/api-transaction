@@ -32,7 +32,7 @@ func InsertTransaction(transaction Transaction) int {
 
 	defer db.Close()
 
-	fmt.Println("Transaction inserted %v", transactionId)
+	fmt.Println("Transaction inserted", transactionId)
 
 	return transactionId
 }

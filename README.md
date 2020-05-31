@@ -2,7 +2,7 @@
 Criar e consultar contas. Transacionar com as contas criadas e apresentar as transações efetuadas em um determinado período
 
 ## Pré-requisitos:
-* Clone ou download [api-transaction](xxxxxx).
+* Clone ou download [api-transaction](https://github.com/camiladosanjos/api-transaction).
 * Go instalado.
 * Code Editor.
 * Postman para realizar requisições na API.

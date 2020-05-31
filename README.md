@@ -3,6 +3,7 @@ Criar e consultar contas. Transacionar com as contas criadas e apresentar as tra
 
 ## Pré-requisitos:
 * Clone ou download [api-transaction](https://github.com/camiladosanjos/api-transaction).
+* O arquivo .envExample deverá ser renomeado para .env e a string de conexão do banco deverá ser alterada.
 * Go instalado.
 * Code Editor.
 * Postman para realizar requisições na API.

@@ -1,0 +1,1 @@
+POSTGRES_URL="user=postgres dbname=bd_transactions password=xxxx host=localhost sslmode=disable"
